@@ -12,6 +12,7 @@ namespace Managers
         private Graph _graph;
         [SerializeField] private int gridSize;
         [SerializeField] private GameObject tilePrefab;
+        public BuildingPlacer buildingPlacer;
         
         public void BuildManagerInit()
         {
@@ -21,7 +22,9 @@ namespace Managers
             
             foreach (var node in _graph.nodes)
             {
-                Instantiate(tilePrefab, new Vector3(node.X * 2, 0, node.Y * 2), quaternion.identity);
+                GameObject tile = Instantiate(tilePrefab, new Vector3(node.X * 1, 0, node.Y * 1), quaternion.identity);
+                
+                tile.layer = LayerMask.NameToLayer("Terrain");
             }
         }
     }

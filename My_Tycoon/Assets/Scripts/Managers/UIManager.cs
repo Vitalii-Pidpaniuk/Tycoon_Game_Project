@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Managers
 {
-    public class UIManager : Singleton<UIManager>
+    public abstract class UIManager : Singleton<UIManager>
     {
     }
 }

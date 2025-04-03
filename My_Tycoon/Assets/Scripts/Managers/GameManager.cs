@@ -5,19 +5,21 @@ using UnityEngine;
 
 namespace Managers
 {
-    public class GameManager : Singleton<GameManager>
+    public abstract class GameManager : Singleton<GameManager>
     {
+        //[SerializeField] protected GameObject buildManager;
+        
         protected override void Awake()
         {
             base.Awake();
         }
 
-        protected void Start()
+        protected virtual void Start()
         {
             InitializeGame();
         }
 
-        private void InitializeGame()
+        protected void InitializeGame()
         {
             Debug.Log("Game Initialized");
             BuildingManager.Instance.BuildManagerInit();
