@@ -16,16 +16,19 @@ namespace Managers
         
         public void BuildManagerInit()
         {
-            _graph = gameObject.AddComponent<Graph>();
-            _graph.GenerateGridGraph(gridSize);
-            _graph.PrintGraph();
+            // _graph = gameObject.AddComponent<Graph>();
+            // _graph.GenerateGridGraph(gridSize);
+            // _graph.PrintGraph();
+            //
+            // foreach (var node in _graph.nodes)
+            // {
+            //     GameObject tile = Instantiate(tilePrefab, new Vector3(node.X * 1, 0, node.Y * 1), quaternion.identity);
+            //     
+            //     tile.layer = LayerMask.NameToLayer("Terrain");
+            // }
             
-            foreach (var node in _graph.nodes)
-            {
-                GameObject tile = Instantiate(tilePrefab, new Vector3(node.X * 1, 0, node.Y * 1), quaternion.identity);
-                
-                tile.layer = LayerMask.NameToLayer("Terrain");
-            }
+            GameObject tile = Instantiate(tilePrefab, new Vector3(0, 0, 0), quaternion.identity);
+            tile.layer = LayerMask.NameToLayer("Terrain");
         }
     }
 }

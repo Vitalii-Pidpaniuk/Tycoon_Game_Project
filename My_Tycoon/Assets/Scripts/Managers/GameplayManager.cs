@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Managers
@@ -17,19 +19,35 @@ namespace Managers
     public class GameplayManager : GameManager
     {
         [SerializeField] private Button swipingMode, buildingMode, replacingMode, adjustingMode;
+        [SerializeField] private List<Button> buildingButtons;
         private Button _activeButton;
         public GameMode gameMode = GameMode.Swiping;
+        
 
         protected override void Start()
         {
-            base.InitializeGame();
+            InitializeGame();
+            
             swipingMode.onClick.AddListener(() => SetMode(GameMode.Swiping, swipingMode));
             buildingMode.onClick.AddListener(() => SetMode(GameMode.Building, buildingMode));
             replacingMode.onClick.AddListener(() => SetMode(GameMode.Replacing, replacingMode));
             adjustingMode.onClick.AddListener(() => SetMode(GameMode.Adjusting, adjustingMode));
+            foreach (var button in buildingButtons)
+            {
+                button.onClick.AddListener(() => SetMode(GameMode.Building, buildingMode));
+            }
+
+            SaveLoadManager.Instance.LoadGame();
             
+            SetMode(GameMode.Swiping, swipingMode);
         }
-        
+
+        private void InitializeGame()
+        {
+            Debug.Log("Game Initialized");
+            BuildingManager.Instance.BuildManagerInit();
+        }
+
         private void SetMode(GameMode mode, Button clickedButton)
         {
             gameMode = mode;
@@ -51,25 +69,24 @@ namespace Managers
             {
                 case GameMode.Swiping:
                     BuildingManager.Instance.buildingPlacer.SetBuildingMode(false);
-                    BuildingManager.Instance.buildingPlacer.SetReplacingMode(false);
-                    BuildingManager.Instance.buildingPlacer.SetAdjustingMode(false);
                     break;
                 case GameMode.Building:
                     BuildingManager.Instance.buildingPlacer.SetBuildingMode(true);
-                    //BuildingManager.Instance.buildingPlacer.SetReplacingMode(false);
-                    //BuildingManager.Instance.buildingPlacer.SetAdjustingMode(false);
+                    swipingMode.interactable = true;
                     break;
                 case GameMode.Replacing:
                     BuildingManager.Instance.buildingPlacer.SetReplacingMode(true);
-                    //BuildingManager.Instance.buildingPlacer.SetBuildingMode(false);
-                    //BuildingManager.Instance.buildingPlacer.SetAdjustingMode(false);
                     break;
                 case GameMode.Adjusting:
                     BuildingManager.Instance.buildingPlacer.SetAdjustingMode(true);
-                    //BuildingManager.Instance.buildingPlacer.SetReplacingMode(false);
-                    //BuildingManager.Instance.buildingPlacer.SetBuildingMode(false);
                     break;
             }
+        }
+
+        public void ExitToMainMenu()
+        {
+            SaveLoadManager.Instance.SaveGame();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
     }
 }

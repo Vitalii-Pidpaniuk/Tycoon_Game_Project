@@ -35,10 +35,10 @@ namespace Map
                 for (int y = 0; y < size; y++)
                 {
                     Node node = grid[x, y];
-                    if (x > 0) node.AddNeighbor(grid[x - 1, y]); // Лівий сусід
-                    if (x < size - 1) node.AddNeighbor(grid[x + 1, y]); // Правий сусід
-                    if (y > 0) node.AddNeighbor(grid[x, y - 1]); // Нижній сусід
-                    if (y < size - 1) node.AddNeighbor(grid[x, y + 1]); // Верхній сусід
+                    if (x > 0) node.AddNeighbor(grid[x - 1, y]);
+                    if (x < size - 1) node.AddNeighbor(grid[x + 1, y]);
+                    if (y > 0) node.AddNeighbor(grid[x, y - 1]);
+                    if (y < size - 1) node.AddNeighbor(grid[x, y + 1]);
                 }
             }
         }

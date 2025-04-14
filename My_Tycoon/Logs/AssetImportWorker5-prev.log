@@ -1,0 +1,1263 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.37f1 (340ba89e4c23) revision 3410856'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'uk' Physical Memory: 32095 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity 2022.3.37f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker5
+-projectPath
+D:/MyFiles/WorkProjects/My_Tycoon
+-logFile
+Logs/AssetImportWorker5.log
+-srvPort
+56399
+Successfully changed project path to: D:/MyFiles/WorkProjects/My_Tycoon
+D:/MyFiles/WorkProjects/My_Tycoon
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [28564] Host "[IP] 192.168.0.101 [Port] 0 [Flags] 2 [Guid] 3505135431 [EditorId] 3505135431 [Version] 1048832 [Id] WindowsEditor(7,Pidpaniuk_V) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [28564] Host "[IP] 192.168.0.101 [Port] 0 [Flags] 2 [Guid] 3505135431 [EditorId] 3505135431 [Version] 1048832 [Id] WindowsEditor(7,Pidpaniuk_V) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+Refreshing native plugins compatible for Editor in 12.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.37f1 (340ba89e4c23)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2022.3.37f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/MyFiles/WorkProjects/My_Tycoon/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Ti Laptop GPU (ID=0x25a0)
+    Vendor:   NVIDIA
+    VRAM:     3962 MB
+    Driver:   32.0.15.6119
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity 2022.3.37f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity 2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity 2022.3.37f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56360
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity 2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006261 seconds.
+- Loaded All Assemblies, in  0.304 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.237 seconds
+Domain Reload Profiling: 539ms
+	BeginReloadAssembly (95ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (54ms)
+	LoadAllAssembliesAndSetupDomain (113ms)
+		LoadAssemblies (93ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (111ms)
+			TypeCache.Refresh (110ms)
+				TypeCache.ScanAssembly (99ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (238ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (188ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (130ms)
+			ProcessInitializeOnLoadMethodAttributes (42ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.539 seconds
+Refreshing native plugins compatible for Editor in 3.48 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.571 seconds
+Domain Reload Profiling: 1108ms
+	BeginReloadAssembly (127ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (335ms)
+		LoadAssemblies (252ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (155ms)
+			TypeCache.Refresh (127ms)
+				TypeCache.ScanAssembly (115ms)
+			ScanForSourceGeneratedMonoScriptInfo (18ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (572ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (428ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (67ms)
+			ProcessInitializeOnLoadAttributes (281ms)
+			ProcessInitializeOnLoadMethodAttributes (63ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 3.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5077 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 70 unused Assets / (353.0 KB). Loaded Objects now: 5535.
+Memory consumption went from 206.1 MB to 205.8 MB.
+Total: 3.211000 ms (FindLiveObjects: 0.382300 ms CreateObjectMapping: 0.167500 ms MarkObjects: 2.464100 ms  DeleteObjects: 0.195900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 109204.857648 seconds.
+  path: Assets/Prefabs/MapObjects/SawMill.prefab
+  artifactKey: Guid(8f993c83a443c394cbee8c12946c7fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapObjects/SawMill.prefab using Guid(8f993c83a443c394cbee8c12946c7fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f3f88cf57ed8be92074741117a013482') in 0.392939 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1336
+========================================================================
+Received Import Request.
+  Time since last request: 3.894053 seconds.
+  path: Assets/Prefabs/MapObjects/SawMill.prefab
+  artifactKey: Guid(8f993c83a443c394cbee8c12946c7fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapObjects/SawMill.prefab using Guid(8f993c83a443c394cbee8c12946c7fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '8ffea383c232fb80addef3732fd1689e') in 0.072614 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1335
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Prefabs/MapObjects/Smithy.prefab
+  artifactKey: Guid(ff756f580dd031f4095179271ff5e366) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapObjects/Smithy.prefab using Guid(ff756f580dd031f4095179271ff5e366) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '54c6a2ea4a9c574d3cf8c042fdc7f78a') in 0.083920 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2315
+========================================================================
+Received Import Request.
+  Time since last request: 2.318794 seconds.
+  path: Assets/Prefabs/MapObjects/SawMill.prefab
+  artifactKey: Guid(8f993c83a443c394cbee8c12946c7fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapObjects/SawMill.prefab using Guid(8f993c83a443c394cbee8c12946c7fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ccc316681774da41ad12876248623430') in 0.082650 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1591
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Prefabs/MapObjects/Smithy.prefab
+  artifactKey: Guid(ff756f580dd031f4095179271ff5e366) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapObjects/Smithy.prefab using Guid(ff756f580dd031f4095179271ff5e366) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f0661fca215d5b4096e9419fb5ba4d55') in 0.090621 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2571
+========================================================================
+Received Import Request.
+  Time since last request: 4.136670 seconds.
+  path: Assets/Prefabs/MapObjects/SawMill.prefab
+  artifactKey: Guid(8f993c83a443c394cbee8c12946c7fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapObjects/SawMill.prefab using Guid(8f993c83a443c394cbee8c12946c7fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'cbba1c37e5dc7064ec212f5648dc1a16') in 0.078438 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1591
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Prefabs/MapObjects/Smithy.prefab
+  artifactKey: Guid(ff756f580dd031f4095179271ff5e366) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapObjects/Smithy.prefab using Guid(ff756f580dd031f4095179271ff5e366) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '9984f1a6eb70f823f4ddaab1bda9479b') in 0.080774 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2571
+========================================================================
+Received Import Request.
+  Time since last request: 5.396094 seconds.
+  path: Assets/Prefabs/MapObjects/SawMill.prefab
+  artifactKey: Guid(8f993c83a443c394cbee8c12946c7fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapObjects/SawMill.prefab using Guid(8f993c83a443c394cbee8c12946c7fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '8a7359c57b3de7aca82448b0862e5c10') in 0.085580 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1847
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Prefabs/MapObjects/Smithy.prefab
+  artifactKey: Guid(ff756f580dd031f4095179271ff5e366) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapObjects/Smithy.prefab using Guid(ff756f580dd031f4095179271ff5e366) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a9afbf56bcd29499ffc06e4c22d94d21') in 0.088413 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2827
+========================================================================
+Received Import Request.
+  Time since last request: 5.739980 seconds.
+  path: Assets/Prefabs/MapObjects/SawMill.prefab
+  artifactKey: Guid(8f993c83a443c394cbee8c12946c7fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapObjects/SawMill.prefab using Guid(8f993c83a443c394cbee8c12946c7fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ecc4545fc16f17dd6b1613b7f99d1733') in 0.083641 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1847
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Prefabs/MapObjects/Smithy.prefab
+  artifactKey: Guid(ff756f580dd031f4095179271ff5e366) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapObjects/Smithy.prefab using Guid(ff756f580dd031f4095179271ff5e366) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '370c6f480c7a33aec3363560026f27d9') in 0.085875 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2827
+========================================================================
+Received Import Request.
+  Time since last request: 21.715976 seconds.
+  path: Assets/Prefabs/MapObjects/SawMill.prefab
+  artifactKey: Guid(8f993c83a443c394cbee8c12946c7fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapObjects/SawMill.prefab using Guid(8f993c83a443c394cbee8c12946c7fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'e8ddc169350c2a82023daaccfa9e1536') in 0.081395 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1792
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Prefabs/MapObjects/TradingPoint.prefab
+  artifactKey: Guid(931526b371f233f46803077ab16e7794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapObjects/TradingPoint.prefab using Guid(931526b371f233f46803077ab16e7794) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '4cc04c7890eb3e0d65a183455591acf3') in 0.133806 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3481
+========================================================================
+Received Import Request.
+  Time since last request: 1.120274 seconds.
+  path: Assets/Prefabs/MapObjects/SawMill.prefab
+  artifactKey: Guid(8f993c83a443c394cbee8c12946c7fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapObjects/SawMill.prefab using Guid(8f993c83a443c394cbee8c12946c7fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '40e7cc6fbeeea20aa849411b9732f510') in 0.079731 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1739
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Prefabs/MapObjects/Smithy.prefab
+  artifactKey: Guid(ff756f580dd031f4095179271ff5e366) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapObjects/Smithy.prefab using Guid(ff756f580dd031f4095179271ff5e366) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '224c10b26ae01b8ac2ccd35e9ab006ae') in 0.088681 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2719
+========================================================================
+Received Import Request.
+  Time since last request: 15.377898 seconds.
+  path: Assets/Prefabs/MapObjects/SawMill.prefab
+  artifactKey: Guid(8f993c83a443c394cbee8c12946c7fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapObjects/SawMill.prefab using Guid(8f993c83a443c394cbee8c12946c7fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '32d82417f03bd4ebae137d9ef80b5711') in 0.096380 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1686
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Prefabs/MapObjects/TradingPoint.prefab
+  artifactKey: Guid(931526b371f233f46803077ab16e7794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapObjects/TradingPoint.prefab using Guid(931526b371f233f46803077ab16e7794) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '857024e37c35ce16de75b14ac595c672') in 0.128802 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3323
+========================================================================
+Received Import Request.
+  Time since last request: 205.647184 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3805c5dc4439d4052869d72a40219406') in 0.033154 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 752
+========================================================================
+Received Import Request.
+  Time since last request: 5.873077 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c5eae59fc1422032823c0b98de0a7623') in 0.036346 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 725
+========================================================================
+Received Import Request.
+  Time since last request: 3.567458 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ea92fd14e9ea4900e0937b668101a34c') in 0.033986 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 753
+========================================================================
+Received Import Request.
+  Time since last request: 30.250528 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '10584ed007627f3bd81c72ff3e40e996') in 0.033806 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 754
+========================================================================
+Received Import Request.
+  Time since last request: 15.153774 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '62f534eedefff99a3c9f0284536b48e7') in 0.036974 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 755
+========================================================================
+Received Import Request.
+  Time since last request: 17.478262 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2f34e4548906c85031332c29624c1de9') in 0.039179 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 756
+========================================================================
+Received Import Request.
+  Time since last request: 14.581809 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '005b9903a42e85b08f82a33554e1a26a') in 0.035626 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 757
+========================================================================
+Received Import Request.
+  Time since last request: 14.623374 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'b4805484cfe4134507d88de19cf66971') in 0.034708 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 36.779233 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '20f91090052a3c544da034077239c3cd') in 0.035173 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 5.457209 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '4c6639ea9e634fb8b41867aba99fb940') in 0.044666 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 5.198104 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f2539e0bb846c7aafd3433b387735280') in 0.039730 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 3.383109 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '23689ad7eba63d7e11da1f0125c06a94') in 0.035641 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 3.377710 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd3e5046e29cdc04191139d41c6db7373') in 0.033573 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.415 seconds
+Refreshing native plugins compatible for Editor in 3.60 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.291 seconds
+Domain Reload Profiling: 1704ms
+	BeginReloadAssembly (157ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (41ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (193ms)
+		LoadAssemblies (253ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (15ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1291ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (505ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (78ms)
+			ProcessInitializeOnLoadAttributes (326ms)
+			ProcessInitializeOnLoadMethodAttributes (79ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (24ms)
+Refreshing native plugins compatible for Editor in 5.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4912 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (320.6 KB). Loaded Objects now: 5587.
+Memory consumption went from 182.0 MB to 181.7 MB.
+Total: 4.294300 ms (FindLiveObjects: 0.634400 ms CreateObjectMapping: 0.428000 ms MarkObjects: 3.018600 ms  DeleteObjects: 0.211500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 64.486682 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2ff670c37fb01ea9b47656f100770573') in 0.106019 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 6.438295 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '33202049d93e00a28ba0a0e55b99fbcb') in 0.041641 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 4.143918 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f4d04ebf103c27c3cee478296e101ab9') in 0.037901 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 16.235716 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '561a0c4b56e02b0486b7148011f8a386') in 0.035565 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 38.403058 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2ff7709256a31e7ed8f107f2d15b47bc') in 0.037122 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 9.761838 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ceabb3b16503f315372d80b49b61e456') in 0.035469 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 13.976654 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'cda98e8bc9dd4589f2c59c34bc81de89') in 0.033642 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 7.341525 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '55e7dd3d96625224efad4675e6d92f92') in 0.045380 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 1.693944 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '07345d5b3cc41e2b2c0fc7fb3e0e005b') in 0.038767 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 8.927729 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3a8e17c8cbb0e92fdc7c8a3cc5c45c45') in 0.034830 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 2.804908 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '60d94ed6702eb32910764af35dfc9607') in 0.041614 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 12.325556 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '307d244e37bd52f58739600bbc42696d') in 0.040687 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 3.678988 seconds.
+  path: Assets/Prefabs/UI/TradingPoint.prefab
+  artifactKey: Guid(20721bd086122c44db4c87941e6e2ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPoint.prefab using Guid(20721bd086122c44db4c87941e6e2ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '14b360892c656bf7aeeac90b16ed9ff4') in 0.027481 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 724
+========================================================================
+Received Import Request.
+  Time since last request: 13.006151 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1e0112b786caa1e5d1fed5f4bed8716b') in 0.039202 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 9.951512 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ee8797af6fb332670663c04e5034860d') in 0.036047 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 2.571578 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '31fb976f1d4adeb45959b5fd83e616e1') in 0.038047 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.406 seconds
+Refreshing native plugins compatible for Editor in 4.44 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.279 seconds
+Domain Reload Profiling: 1683ms
+	BeginReloadAssembly (143ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (36ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (195ms)
+		LoadAssemblies (254ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (15ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1280ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (485ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (69ms)
+			ProcessInitializeOnLoadAttributes (325ms)
+			ProcessInitializeOnLoadMethodAttributes (71ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (21ms)
+Refreshing native plugins compatible for Editor in 4.40 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4912 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 47 unused Assets / (320.7 KB). Loaded Objects now: 5591.
+Memory consumption went from 181.9 MB to 181.6 MB.
+Total: 4.754900 ms (FindLiveObjects: 0.548600 ms CreateObjectMapping: 0.530700 ms MarkObjects: 3.451300 ms  DeleteObjects: 0.222500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 74.236441 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ec1c4811c7a19669304c4438ee34aaee') in 0.094114 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 3.041194 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'de2edfd4d4a879a1bd51907a1963b319') in 0.038509 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 19.110163 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '777ecd66bc258b3c468c8297febac8c7') in 0.039543 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 12.197812 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'be74aea3fab4e9eb095cb7ebf0cba490') in 0.040904 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 9.532495 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'e6a4b19db78458c7f3a8a085b763e0ff') in 0.038412 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 9.593402 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a2407746829c02036d0153c1754a81b2') in 0.035125 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 14.092472 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '7499561a2205c980c26c13a337ddfa8b') in 0.034786 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.406 seconds
+Refreshing native plugins compatible for Editor in 3.95 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.341 seconds
+Domain Reload Profiling: 1745ms
+	BeginReloadAssembly (143ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (195ms)
+		LoadAssemblies (254ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (15ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1342ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (504ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (73ms)
+			ProcessInitializeOnLoadAttributes (333ms)
+			ProcessInitializeOnLoadMethodAttributes (78ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (20ms)
+Refreshing native plugins compatible for Editor in 4.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4912 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 47 unused Assets / (320.8 KB). Loaded Objects now: 5595.
+Memory consumption went from 182.0 MB to 181.6 MB.
+Total: 3.251300 ms (FindLiveObjects: 0.377600 ms CreateObjectMapping: 0.320700 ms MarkObjects: 2.432400 ms  DeleteObjects: 0.119800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 60.959243 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '78507a154a5c312ee0ae34e0113ed99c') in 0.100061 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 5.251793 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1132996dbcddf56c2337969f5c6d42a5') in 0.043365 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 12.623303 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '868541ada6aac5143d0e2eb64ea7778a') in 0.041573 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 10.426054 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'b0817cef15e774388ac4e74c0ccde612') in 0.038894 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 7.208152 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'aaee372c106cfc452102ea9a2af43954') in 0.039900 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.417 seconds
+Refreshing native plugins compatible for Editor in 4.07 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.279 seconds
+Domain Reload Profiling: 1694ms
+	BeginReloadAssembly (142ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (38ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (206ms)
+		LoadAssemblies (256ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (20ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1279ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (491ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (79ms)
+			ProcessInitializeOnLoadAttributes (320ms)
+			ProcessInitializeOnLoadMethodAttributes (75ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (20ms)
+Refreshing native plugins compatible for Editor in 4.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4912 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 47 unused Assets / (320.8 KB). Loaded Objects now: 5599.
+Memory consumption went from 182.0 MB to 181.6 MB.
+Total: 3.592800 ms (FindLiveObjects: 0.439700 ms CreateObjectMapping: 0.179500 ms MarkObjects: 2.849100 ms  DeleteObjects: 0.122800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 96.884016 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '5ef721dad45e377239099d2d121e3764') in 0.097152 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 758
+========================================================================
+Received Import Request.
+  Time since last request: 22.648343 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd63a63230acdc899c2fa5678d56d20a6') in 0.037135 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 759
+========================================================================
+Received Import Request.
+  Time since last request: 5.752945 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'cf44989f81eda835a9e4bfe5c9c414c1') in 0.037839 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 759
+========================================================================
+Received Import Request.
+  Time since last request: 8.152593 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '633c28f2b11ebb8669255934d1a3ca05') in 0.038750 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 759
+========================================================================
+Received Import Request.
+  Time since last request: 19.423849 seconds.
+  path: Assets/Prefabs/UI/TradingPoint.prefab
+  artifactKey: Guid(20721bd086122c44db4c87941e6e2ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPoint.prefab using Guid(20721bd086122c44db4c87941e6e2ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'db6e4331f9b0b48e495aed958887a77c') in 0.026715 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 725
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Prefabs/UI/WoodItem Variant.prefab
+  artifactKey: Guid(5071c663362fc4840b46a9cbc1f6ca8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/WoodItem Variant.prefab using Guid(5071c663362fc4840b46a9cbc1f6ca8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd782f42444dbf72b9a7957df26b75aba') in 0.013780 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 67
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '887264bf057d8a986bffb4a95fbdf466') in 0.036969 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 759
+========================================================================
+Received Import Request.
+  Time since last request: 16.472321 seconds.
+  path: Assets/Prefabs/UI/Canvas.prefab
+  artifactKey: Guid(c451e967403f9e743b558e465b036d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Canvas.prefab using Guid(c451e967403f9e743b558e465b036d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ca14b571e6eaa090579b33ca96f306a5') in 0.094949 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1746
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Prefabs/UI/CoalMineItem Variant.prefab
+  artifactKey: Guid(20a658e1c4075ce499fae5cadefcec9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/CoalMineItem Variant.prefab using Guid(20a658e1c4075ce499fae5cadefcec9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '5d3775b828dca892db3ce5f049fec436') in 0.026582 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 98
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Prefabs/UI/RoadItem Variant.prefab
+  artifactKey: Guid(9389a02c0f0ebc843ab9b2cabf3b9241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/RoadItem Variant.prefab using Guid(9389a02c0f0ebc843ab9b2cabf3b9241) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '95907e49643b0de7e5fcce70bc084969') in 0.021857 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 68
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Prefabs/UI/HouseItem Variant.prefab
+  artifactKey: Guid(73758360e4335164baa0fff6f924bada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/HouseItem Variant.prefab using Guid(73758360e4335164baa0fff6f924bada) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'b6271a3af1994997085f33b4a1d1f604') in 0.022724 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 98
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Prefabs/UI/TradingPoint.prefab
+  artifactKey: Guid(20721bd086122c44db4c87941e6e2ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPoint.prefab using Guid(20721bd086122c44db4c87941e6e2ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '075e4d14ac1c7376e1f2ea8749b8ef92') in 0.039220 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 725
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Prefabs/UI/InventoryItem.prefab
+  artifactKey: Guid(843298721eae2254f88b32b6f090841d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/InventoryItem.prefab using Guid(843298721eae2254f88b32b6f090841d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'e6b8c2c61d3fce4b015b1b0157fb185c') in 0.014774 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 23.349720 seconds.
+  path: Assets/Prefabs/UI/TradingPoint.prefab
+  artifactKey: Guid(20721bd086122c44db4c87941e6e2ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPoint.prefab using Guid(20721bd086122c44db4c87941e6e2ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a7ecfb87a0f289bedfef91b7250d2fc5') in 0.030501 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 729
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Prefabs/UI/TradingPointPanel.prefab
+  artifactKey: Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPointPanel.prefab using Guid(e8b2162d493d6384f9ccc582ea20aade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'b8a00f4e6e43a7b0e754872ce1743c5f') in 0.037085 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 763
+========================================================================
+Received Import Request.
+  Time since last request: 2.907593 seconds.
+  path: Assets/Prefabs/UI/TradingPoint.prefab
+  artifactKey: Guid(20721bd086122c44db4c87941e6e2ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPoint.prefab using Guid(20721bd086122c44db4c87941e6e2ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '8d2c7a04228b7cc77e3241b63eb9d87e') in 0.034819 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 729
+========================================================================
+Received Import Request.
+  Time since last request: 3.946706 seconds.
+  path: Assets/Prefabs/UI/TradingPoint.prefab
+  artifactKey: Guid(20721bd086122c44db4c87941e6e2ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPoint.prefab using Guid(20721bd086122c44db4c87941e6e2ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '5d94f844619b03aa19739875f9e3e6be') in 0.031920 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 729
+========================================================================
+Received Import Request.
+  Time since last request: 5.547790 seconds.
+  path: Assets/Prefabs/UI/TradingPoint.prefab
+  artifactKey: Guid(20721bd086122c44db4c87941e6e2ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPoint.prefab using Guid(20721bd086122c44db4c87941e6e2ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '62f0dab2bb7b2f9e72599c1399e8bfbe') in 0.039763 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 729
+========================================================================
+Received Import Request.
+  Time since last request: 2.147517 seconds.
+  path: Assets/Prefabs/UI/TradingPoint.prefab
+  artifactKey: Guid(20721bd086122c44db4c87941e6e2ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/TradingPoint.prefab using Guid(20721bd086122c44db4c87941e6e2ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3a6edc0ad16b592c087df0914a47186d') in 0.029600 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 729
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.438 seconds
+Refreshing native plugins compatible for Editor in 3.88 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.337 seconds
+Domain Reload Profiling: 1772ms
+	BeginReloadAssembly (160ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (203ms)
+		LoadAssemblies (266ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (16ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1337ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (535ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (91ms)
+			ProcessInitializeOnLoadAttributes (343ms)
+			ProcessInitializeOnLoadMethodAttributes (77ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (23ms)
+Refreshing native plugins compatible for Editor in 5.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4912 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 47 unused Assets / (320.7 KB). Loaded Objects now: 5603.
+Memory consumption went from 182.0 MB to 181.7 MB.
+Total: 4.607700 ms (FindLiveObjects: 0.411900 ms CreateObjectMapping: 0.631800 ms MarkObjects: 3.287800 ms  DeleteObjects: 0.275100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.481 seconds
+Refreshing native plugins compatible for Editor in 4.96 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.180 seconds
+Domain Reload Profiling: 1659ms
+	BeginReloadAssembly (173ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (39ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (226ms)
+		LoadAssemblies (281ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (39ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (17ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1181ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (408ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (72ms)
+			ProcessInitializeOnLoadAttributes (258ms)
+			ProcessInitializeOnLoadMethodAttributes (58ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 4.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4912 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 45 unused Assets / (319.2 KB). Loaded Objects now: 5607.
+Memory consumption went from 182.0 MB to 181.7 MB.
+Total: 3.738900 ms (FindLiveObjects: 0.427300 ms CreateObjectMapping: 0.490900 ms MarkObjects: 2.711700 ms  DeleteObjects: 0.108000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

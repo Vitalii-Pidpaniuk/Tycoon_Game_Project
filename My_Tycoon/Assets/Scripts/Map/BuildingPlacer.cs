@@ -1,44 +1,83 @@
+using System.Linq;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.EventSystems;
+
+using Managers;
+using ResourceType = Managers.ResourceType;
 
 namespace Map
 {
     public class BuildingPlacer : MonoBehaviour
     {
-        [SerializeField] private GameObject buildingPrefab;
         [SerializeField] private LayerMask groundLayer;
         [SerializeField] private LayerMask buildingLayer;
         [SerializeField] private float gridSize = 1f;
         [SerializeField] private Material validMaterial, invalidMaterial;
+        [SerializeField] private LayerMask roadLayer;
+        [SerializeField] private GameObject tradingPointPrefab;
 
+        private ResourceType currentBuildingType;
         private GameObject ghostBuilding;
         private GameObject selectedBuilding;
         private bool isDragging = false;
+        private GameObject currentBuildingPrefab;
 
-        private bool _isBuilding = false;
-        private bool _isReplacing = false;
-        private bool _isAdjusting = false;
+        public bool _isBuilding = false;
+        public bool _isReplacing = false;
+        public bool _isAdjusting = false;
+        
+        Vector3 position;
+
+        bool validGround, isFree, nearRoad, isRoad;
 
         private void Start()
         {
-            CreateGhostBuilding();
-            ghostBuilding.SetActive(false);
+            if (ghostBuilding != null)
+                ghostBuilding.SetActive(false);
+
+            //Instantiate(tradingPointPrefab, new Vector3(0, 1, 1), quaternion.identity);
         }
 
         private void Update()
         {
-            if (_isBuilding)
+            if (_isBuilding) HandleBuildingMode();
+            else if (_isReplacing) HandleReplacingMode();
+            else if (_isAdjusting) HandleAdjustingMode();
+            else
             {
-                HandleBuildingMode();
+                if (ghostBuilding != null)
+                {
+                    Destroy(ghostBuilding);
+                }
             }
-            else if (_isReplacing)
-            {
-                HandleReplacingMode();
-            }
-            else if (_isAdjusting)
-            {
-                HandleAdjustingMode();
-            }
+        }
+
+        public void StartBuildingMode(GameObject newBuildingPrefab, ResourceType resourceType)
+        {
+            Debug.Log("StartBuildingMode: " + newBuildingPrefab.name);
+            if (ghostBuilding != null)
+                Destroy(ghostBuilding);
+
+            currentBuildingPrefab = newBuildingPrefab;
+            currentBuildingType = resourceType;
+
+            ghostBuilding = Instantiate(currentBuildingPrefab);
+            DisableColliders(ghostBuilding);
+            ApplyGhostMaterial(ghostBuilding, validMaterial);
+            ghostBuilding.SetActive(true);
+
+            SetBuildingMode(true);
+        }
+
+        public void StartReplacingMode()
+        {
+            SetReplacingMode(true);
+        }
+
+        public void StartAdjustingMode()
+        {
+            SetAdjustingMode(true);
         }
 
         // ========== BUILDING MODE ==========
@@ -52,74 +91,101 @@ namespace Map
             }
         }
 
-        // ========== REPLACING MODE (Видалення будівлі) ==========
+        // ========== REPLACING MODE ==========
         private void HandleReplacingMode()
         {
             if (Input.GetMouseButtonDown(0) && !IsPointerOverUI())
             {
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, buildingLayer))
+                if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, buildingLayer | roadLayer))
                 {
-                    if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Building"))
+                    var obj = hit.collider.gameObject;
+                    var toRemove = Managers.SaveLoadManager.Instance.placedBuildings
+                        .FirstOrDefault(kv => kv.Value == obj).Key;
+                    if (toRemove != 0)
                     {
-                        Destroy(hit.collider.gameObject);
+                        Managers.SaveLoadManager.Instance.placedBuildings.Remove(toRemove);
                     }
+                    Destroy(obj);
+                    Managers.SaveLoadManager.Instance.SaveGame();
                 }
             }
         }
 
-        // ========== ADJUSTING MODE (Переміщення будівлі) ==========
+
+        // ========== ADJUSTING MODE ==========
         private void HandleAdjustingMode()
         {
             if (Input.GetMouseButtonDown(0) && !IsPointerOverUI())
             {
                 if (!isDragging)
                 {
-                    // Піднімаємо будівлю
                     Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                    if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, buildingLayer))
+                    if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, buildingLayer | roadLayer))
                     {
-                        if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Building"))
-                        {
-                            selectedBuilding = hit.collider.gameObject;
-                            isDragging = true;
-                        }
+                        selectedBuilding = hit.collider.gameObject;
+                        currentBuildingPrefab = selectedBuilding;
+                        if (ghostBuilding != null) Destroy(ghostBuilding);
+                        ghostBuilding = Instantiate(selectedBuilding);
+                        DisableColliders(ghostBuilding);
+                        ApplyGhostMaterial(ghostBuilding, invalidMaterial);
+                        ghostBuilding.SetActive(true);
+                        selectedBuilding.SetActive(false);
+                        isDragging = true;
                     }
                 }
                 else
                 {
-                    // Фіксуємо будівлю на місці
-                    if (selectedBuilding != null)
+                    Vector3 newPosition = GetSnappedMousePosition();
+                    if (!IsOccupied(newPosition))
                     {
-                        Vector3 snappedPosition = GetSnappedMousePosition();
-                        selectedBuilding.transform.position = snappedPosition;
+                        selectedBuilding.transform.position = newPosition;
+                        Managers.SaveLoadManager.Instance.SaveGame();
+                        selectedBuilding.SetActive(true);
+                        Destroy(ghostBuilding);
                         selectedBuilding = null;
                         isDragging = false;
                     }
                 }
             }
 
-            // Переміщуємо будівлю за курсором
             if (isDragging && selectedBuilding != null)
             {
-                selectedBuilding.transform.position = GetSnappedMousePosition();
+                Vector3 ghostPos = GetSnappedMousePosition();
+                ghostBuilding.transform.position = ghostPos;
+                ApplyGhostMaterial(ghostBuilding, !IsOccupied(ghostPos) ? validMaterial : invalidMaterial);
             }
         }
 
-        // ========== ФУНКЦІЇ ==========
 
-        private void CreateGhostBuilding()
-        {
-            ghostBuilding = Instantiate(buildingPrefab);
-            ApplyGhostMaterial(ghostBuilding, validMaterial);
-        }
+        // ========== ФУНКЦІЇ ==========
 
         private void MoveGhostToMouse()
         {
-            Vector3 position = GetSnappedMousePosition();
-            bool canBuild = !IsOccupied(position);
-            ApplyGhostMaterial(ghostBuilding, canBuild ? validMaterial : invalidMaterial);
-            ghostBuilding.transform.position = position;
+            position = GetSnappedMousePosition();
+
+            validGround = IsMouseOverTerrain();
+            isFree = !IsOccupied(position);
+            nearRoad = IsNearRoad(position);
+            isRoad = currentBuildingPrefab.CompareTag("Road");
+
+            bool canBuild;
+
+            if (isRoad)
+            {
+                canBuild = validGround && isFree;
+            }
+            else
+            {
+                canBuild = validGround && isFree && nearRoad;
+            }
+
+            if (ghostBuilding != null)
+            {
+                ghostBuilding.SetActive(true);
+                ghostBuilding.transform.position = position;
+                ApplyGhostMaterial(ghostBuilding, canBuild ? validMaterial : invalidMaterial);
+            }
         }
 
         private Vector3 GetSnappedMousePosition()
@@ -148,12 +214,33 @@ namespace Map
 
         private void TryPlaceBuilding()
         {
-            Vector3 position = ghostBuilding.transform.position;
-            if (!IsOccupied(position))
+            bool canPlace = isRoad ? (validGround && isFree) : (validGround && isFree && nearRoad);
+            if (!canPlace) return;
+
+            if (!EconomyManager.Instance.HasEnough(currentBuildingType, 1))
             {
-                GameObject newBuilding = Instantiate(buildingPrefab, position, Quaternion.identity);
-                newBuilding.layer = LayerMask.NameToLayer("Building");
+                return;
             }
+
+            if (!EconomyManager.Instance.SpendResource(currentBuildingType, 1))
+            {
+                return;
+            }
+
+            GameObject newObj = Instantiate(currentBuildingPrefab, position, Quaternion.identity);
+            newObj.layer = LayerMask.NameToLayer(isRoad ? "Road" : "Building");
+
+            int id = SaveLoadManager.Instance.GetNextId();
+            SaveLoadManager.Instance.placedBuildings[id] = newObj;
+
+            SaveLoadManager.Instance.SaveGame();
+        }
+        
+        private bool IsMouseOverTerrain()
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            return Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, groundLayer)
+                   && hit.collider.gameObject.layer == LayerMask.NameToLayer("Terrain");
         }
 
         private void ApplyGhostMaterial(GameObject obj, Material mat)
@@ -172,7 +259,7 @@ namespace Map
             _isAdjusting = false;
             isDragging = false;
             selectedBuilding = null;
-            ghostBuilding.SetActive(isBuilding);
+            if (ghostBuilding != null) ghostBuilding.SetActive(isBuilding);
         }
 
         public void SetReplacingMode(bool isReplacing)
@@ -182,7 +269,8 @@ namespace Map
             _isAdjusting = false;
             isDragging = false;
             selectedBuilding = null;
-            ghostBuilding.SetActive(false);
+            if (ghostBuilding != null) ghostBuilding.SetActive(false);
+            HandleReplacingMode();
         }
 
         public void SetAdjustingMode(bool isAdjusting)
@@ -192,12 +280,53 @@ namespace Map
             _isAdjusting = isAdjusting;
             isDragging = false;
             selectedBuilding = null;
-            ghostBuilding.SetActive(false);
+            if (ghostBuilding != null) ghostBuilding.SetActive(false);
+            HandleAdjustingMode();
         }
 
+        private bool IsNearRoad(Vector3 position)
+        {
+            float offset = gridSize;
+            Vector3[] offsets = new Vector3[]
+            {
+                new Vector3(offset, 0, 0),
+                new Vector3(-offset, 0, 0),
+                new Vector3(0, 0, offset),
+                new Vector3(0, 0, -offset),
+            };
+
+            foreach (var dir in offsets)
+            {
+                if (Physics.CheckSphere(position + dir, 0.3f, roadLayer))
+                    return true;
+            }
+
+            return false;
+        }
+        
         private bool IsPointerOverUI()
         {
             return EventSystem.current != null && EventSystem.current.IsPointerOverGameObject();
         }
+        
+        private void DisableColliders(GameObject obj)
+        {
+            foreach (var collider in obj.GetComponentsInChildren<Collider>())
+            {
+                collider.enabled = false;
+            }
+        }
+        
+        private bool IsValidAdjustingPosition(Vector3 targetPos, GameObject ignoreObject)
+        {
+            Collider[] colliders = Physics.OverlapSphere(targetPos, 0.4f, buildingLayer);
+            foreach (var col in colliders)
+            {
+                if (col.gameObject != ignoreObject)
+                    return false;
+            }
+
+            return IsMouseOverTerrain();
+        }
     }
-}
+} 

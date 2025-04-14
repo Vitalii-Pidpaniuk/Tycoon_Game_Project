@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Player
 {
@@ -16,6 +15,9 @@ namespace Player
         [SerializeField] private float minZoom = 10f;
         [SerializeField] private float maxZoom = 50f;
 
+        [Header("Layers")]
+        [SerializeField] private LayerMask groundLayer;
+
         private Vector3 lastMousePosition;
         public bool isDragging = false;
 
@@ -29,6 +31,9 @@ namespace Player
         {
             if (Input.GetMouseButtonDown(0))
             {
+                if (IsPointerOverUI()) return;
+                if (!IsPointerOverGround()) return;
+
                 isDragging = true;
                 lastMousePosition = Input.mousePosition;
             }
@@ -60,6 +65,16 @@ namespace Player
             pos.y = Mathf.Clamp(pos.y, minZoom, maxZoom);
             transform.position = pos;
         }
+
+        private bool IsPointerOverUI()
+        {
+            return EventSystem.current != null && EventSystem.current.IsPointerOverGameObject();
+        }
+
+        private bool IsPointerOverGround()
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            return Physics.Raycast(ray, Mathf.Infinity, groundLayer);
+        }
     }
-   
 }

@@ -7,7 +7,6 @@ namespace Managers
 {
     public abstract class GameManager : Singleton<GameManager>
     {
-        //[SerializeField] protected GameObject buildManager;
         
         protected override void Awake()
         {
@@ -21,11 +20,9 @@ namespace Managers
 
         protected void InitializeGame()
         {
-            Debug.Log("Game Initialized");
-            BuildingManager.Instance.BuildManagerInit();
         }
 
-        public void SaveGame() { /* Логіка збереження */ }
-        public void LoadGame() { /* Логіка завантаження */ }
+        public void SaveGame() {}
+        public void LoadGame() {}
     }
 }

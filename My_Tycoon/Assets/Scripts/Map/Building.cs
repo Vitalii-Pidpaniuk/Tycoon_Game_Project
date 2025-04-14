@@ -7,21 +7,13 @@ namespace Map
     public enum BuildingType
     {
         House,
-        Resource
+        Resource,
+        TradingPoint
     }
     
     public class Building : MapObject
     {
         //resource to build
         public BuildingType buildingType;
-
-        public void Replace()
-        {
-            //Prefab = terrainPrefab
-        }
-
-        public void Build()
-        {
-        }
     }
 }
